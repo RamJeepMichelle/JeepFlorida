@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0f0d">
+  <title>Jeep Adventure Picker for New Smyrna Beach and Daytona Beach | Michelle</title>
+  <meta name="description" content="Plan a fun Jeep day near New Smyrna Beach and Daytona Beach, Florida. Pick your mood and time to get a coastal, history, or trail-inspired outing and packing list.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jeep Adventure Picker | New Smyrna Beach and Daytona Beach">
+  <meta property="og:description" content="A free, playful Jeep day planner for Florida's coast, local history, and responsible trail adventures.">
+  <meta property="og:image" content="assets/jeep-michelle-lime.png">
+  <link rel="icon" href="assets/jeep-michelle-lime.png">
+  <style>
+    :root{--ink:#0b0f0d;--panel:#151b17;--line:#344136;--lime:#b9ff13;--paper:#f4f2e9;--muted:#b8c3b8}
+    .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--paper);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 88% 10%,#2d4216 0,transparent 36%);opacity:.75}
+    .wrap{width:min(1080px,calc(100% - 36px));margin:auto;position:relative}.top{display:flex;align-items:center;gap:14px;padding:22px 0;border-bottom:1px solid var(--line)}.top img{width:54px;height:54px;object-fit:contain}.brand{font-size:1.05rem;font-weight:850;letter-spacing:.04em}.brand span{color:var(--lime)}.tag{margin-left:auto;font-size:.75rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
+    main{padding:60px 0 80px}.eyebrow{font-size:.78rem;font-weight:800;color:var(--lime);text-transform:uppercase;letter-spacing:.18em}h1{max-width:780px;margin:12px 0 18px;font-size:clamp(2.8rem,7vw,5.5rem);line-height:1.02;letter-spacing:-.06em}h1 em{font-style:normal;color:var(--lime)}.intro{max-width:650px;color:var(--muted);font-size:1.1rem;margin-bottom:42px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.card,.result{border:1px solid var(--line);background:var(--panel);border-radius:20px;padding:28px}.card h2{font-size:1.15rem;margin:0 0 18px}.option-group{display:grid;gap:10px}label.choice{display:flex;gap:12px;align-items:center;padding:13px 15px;border:1px solid var(--line);border-radius:12px;cursor:pointer;transition:.2s;background:#101612}label.choice:hover{border-color:var(--lime)}label.choice:has(input:checked){border-color:var(--lime);background:#263517}input[type=radio]{accent-color:var(--lime);width:18px;height:18px;flex:none}.small{color:var(--muted);font-size:.88rem;margin:0 0 18px}button{border:0;border-radius:12px;background:var(--lime);color:#0b0f0d;font:800 1rem system-ui;padding:15px 21px;cursor:pointer;margin-top:22px;box-shadow:0 5px 0 #729c0f}button:hover{transform:translateY(2px);box-shadow:0 3px 0 #729c0f}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid white;outline-offset:3px}
+    .result{margin-top:20px;display:none}.result.show{display:block}.result-head{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}.result h2{font-size:clamp(1.8rem,4vw,2.7rem);letter-spacing:-.035em;margin:0}.pill{color:var(--lime);border:1px solid var(--lime);padding:5px 10px;border-radius:30px;font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.result-cols{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;margin-top:18px}.result h3{font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;color:var(--lime);margin:22px 0 10px}ol,ul{padding-left:22px;margin:0}li{margin:0 0 9px}.note{border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:.9rem}.about{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;border-top:1px solid var(--line);margin-top:60px;padding-top:28px}.about img{width:92px;height:92px}.about h2{margin:0 0 5px;font-size:1.1rem}.about p{margin:0;color:var(--muted);max-width:720px}footer{border-top:1px solid var(--line);padding:25px 0 35px;color:var(--muted);font-size:.78rem}a{color:var(--lime)}
+    @media(max-width:720px){main{padding-top:42px}.grid,.result-cols{grid-template-columns:1fr}.tag{display:none}.card,.result{padding:22px}.about{grid-template-columns:1fr}.about img{width:72px;height:72px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}label.choice,button{transition:none}}
+  </style>
+</head>
+<body>
+  <header class="wrap top"><img src="assets/jeep-michelle-lime.png" alt="Lime green Jeep Michelle badge"><div class="brand">JEEP <span>Michelle</span></div><div class="tag">A little more open road</div></header>
+  <main class="wrap">
+    <div class="eyebrow">New Smyrna Beach · Daytona Beach · beyond</div>
+    <h1>What kind of <em>Jeep day</em> is today?</h1>
+    <p class="intro">A playful, free adventure picker for the Florida coast. Choose your mood and how much time you have. Get a flexible outing idea and a practical packing list—then make it your own.</p>
+    <form id="picker" class="grid">
+      <fieldset class="card" style="margin:0;min-width:0"><legend class="visually-hidden">Choose your mood</legend><h2>01 / Pick your mood</h2><div class="option-group">
+        <label class="choice"><input type="radio" name="mood" value="coast" checked><span>🌊 Coast and fresh air</span></label>
+        <label class="choice"><input type="radio" name="mood" value="history"><span>🏛️ Local stories and old streets</span></label>
+        <label class="choice"><input type="radio" name="mood" value="trail"><span>🧭 Dirt road daydreams</span></label>
+      </div></fieldset>
+      <fieldset class="card" style="margin:0;min-width:0"><legend class="visually-hidden">Choose your time</legend><h2>02 / How much time?</h2><div class="option-group">
+        <label class="choice"><input type="radio" name="time" value="short" checked><span>One easy hour</span></label>
+        <label class="choice"><input type="radio" name="time" value="half"><span>Half a day</span></label>
+        <label class="choice"><input type="radio" name="time" value="full"><span>Make a day of it</span></label>
+      </div><button type="submit">Build my Jeep day →</button></fieldset>
+    </form>
+    <section id="result" class="result" aria-live="polite" aria-label="Your Jeep day plan"><div class="result-head"><h2 id="plan-title"></h2><span id="plan-time" class="pill"></span></div><p id="plan-intro"></p><div class="result-cols"><div><h3>A flexible plan</h3><ol id="plan-steps"></ol></div><div><h3>Pack this</h3><ul id="plan-pack"></ul></div></div><p class="note" id="plan-note"></p></section>
+    <section class="about"><img src="assets/jeep-michelle-lime.png" alt="Jeep Michelle circular logo"><div><h2>Made by Michelle</h2><p>I'm a New Smyrna Beach local who likes the little decisions that turn an ordinary drive into a good day. This is an independent, just-for-fun planning tool—not an official Jeep or trail guide. Check current access, weather, road rules, and vehicle capability before you go.</p></div></section>
+  </main>
+  <footer><div class="wrap">Independent fan project by Michelle · No affiliation with Jeep or its manufacturer · © <span id="year"></span></div></footer>
+  <script>
+    const plans={
+      coast:{title:'The coastal reset',intro:'Keep the route loose and give yourself time to stop when the light is good.',steps:['Pick a legal public parking spot near the water and take a short walk.','Pause for a drink or a view in New Smyrna Beach or Daytona Beach.','Take the scenic way home with enough daylight to enjoy it.'],pack:['Water and sun protection','A towel and a bag for damp gear','Phone charger','A way to carry out any trash'],note:'Beach driving is allowed only where posted and under current local rules. Stay off dunes and protected areas.'},
+      history:{title:'The local story loop',intro:'Follow the old streets and ask what this coast looked like before the beach towns became famous.',steps:['Start with a local history museum or historic district.','Walk a few blocks and look for dates, building details, and old street names.','Choose one person or business you discovered and read more about them later.'],pack:['Comfortable walking shoes','Water','A notebook or camera','Museum hours checked before leaving'],note:'This is an idea generator, not a fixed itinerary. Verify opening hours and access at each stop.'},
+      trail:{title:'The responsible wander',intro:'Plan around a legal route, your vehicle, and the conditions—not a photo you saw online.',steps:['Choose a public route where motor vehicles are permitted.','Check surface, weather, access rules, and the capability of your particular Jeep.','Tell someone your plan and turn back before conditions exceed your comfort or equipment.'],pack:['Water and a charged phone','Tire and vehicle basics appropriate to your route','Navigation saved for offline use','A companion or check-in plan'],note:'No route is recommended here. Never assume a trail is open or suitable; follow local land-management rules.'}
+    };
+    const extras={short:'Keep it simple: one stop and an easy return.',half:'Add a relaxed meal or a second stop without rushing.',full:'Leave room for a long break and an unplanned discovery.'};
+    const labels={short:'One hour',half:'Half day',full:'Full day'};
+    document.getElementById('picker').addEventListener('submit',e=>{e.preventDefault();const data=new FormData(e.currentTarget),mood=data.get('mood'),time=data.get('time'),p=plans[mood];document.getElementById('plan-title').textContent=p.title;document.getElementById('plan-time').textContent=labels[time];document.getElementById('plan-intro').textContent=p.intro+' '+extras[time];for(const [id,items] of [['plan-steps',p.steps],['plan-pack',p.pack]]){const el=document.getElementById(id);el.replaceChildren(...items.map(item=>{const li=document.createElement('li');li.textContent=item;return li}))}document.getElementById('plan-note').textContent=p.note;const result=document.getElementById('result');result.classList.add('show');result.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});});
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
