@@ -1,1 +1,0 @@
-Jeep Michelle logo image 
