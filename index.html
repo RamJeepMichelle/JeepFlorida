@@ -4,13 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0f0d">
-  <title>Jeep Adventure Picker for New Smyrna Beach and Daytona Beach | Michelle</title>
-  <meta name="description" content="Plan a fun Jeep day near New Smyrna Beach and Daytona Beach, Florida. Pick your mood and time to get a coastal, history, or trail-inspired outing and packing list.">
+  <title>Jeep Adventure Picker: Jeep Days in New Smyrna Beach &amp; Daytona Beach, FL | Jeep Michelle</title>
+  <meta name="description" content="Plan a fun Jeep day near New Smyrna Beach and Daytona Beach, Florida. Pick your mood and time to get a coastal, local history or trail outing and packing list. From Jeep Michelle, your source for Jeeps for sale in New Smyrna Beach.">
+  <meta name="author" content="Jeep Michelle">
+  <link rel="canonical" href="https://ramjeepmichelle.github.io/JeepFlorida/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Jeep Adventure Picker | New Smyrna Beach and Daytona Beach">
   <meta property="og:description" content="A free, playful Jeep day planner for Florida's coast, local history, and responsible trail adventures.">
-  <meta property="og:image" content="assets/jeep-michelle-lime.png">
+  <meta property="og:image" content="https://ramjeepmichelle.github.io/JeepFlorida/assets/jeep-michelle-lime.png">
   <link rel="icon" href="assets/jeep-michelle-lime.png">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Jeep Adventure Picker","applicationCategory":"TravelApplication","operatingSystem":"Any",
+   "author":{"@type":"Person","name":"Jeep Michelle","jobTitle":"Jeep & Ram Commercial Fleet Specialist","url":"https://jeepmichelle.com","email":"michellecdjr@gmail.com","telephone":"+1-386-663-1257;ext=1375",
+     "worksFor":{"@type":"AutoDealer","name":"New Smyrna Chrysler Jeep Dodge Ram","address":{"@type":"PostalAddress","streetAddress":"2555 State Rd 44","addressLocality":"New Smyrna Beach","addressRegion":"FL","postalCode":"32168","addressCountry":"US"}},
+     "areaServed":["New Smyrna Beach","Daytona Beach","Port Orange","Volusia County","Flagler County","Florida"]}}
+  </script>
   <style>
     :root{--ink:#0b0f0d;--panel:#151b17;--line:#344136;--lime:#b9ff13;--paper:#f4f2e9;--muted:#b8c3b8}
     .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--paper);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5}
@@ -18,7 +26,7 @@
     .wrap{width:min(1080px,calc(100% - 36px));margin:auto;position:relative}.top{display:flex;align-items:center;gap:14px;padding:22px 0;border-bottom:1px solid var(--line)}.top img{width:54px;height:54px;object-fit:contain}.brand{font-size:1.05rem;font-weight:850;letter-spacing:.04em}.brand span{color:var(--lime)}.tag{margin-left:auto;font-size:.75rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
     main{padding:60px 0 80px}.eyebrow{font-size:.78rem;font-weight:800;color:var(--lime);text-transform:uppercase;letter-spacing:.18em}h1{max-width:780px;margin:12px 0 18px;font-size:clamp(2.8rem,7vw,5.5rem);line-height:1.02;letter-spacing:-.06em}h1 em{font-style:normal;color:var(--lime)}.intro{max-width:650px;color:var(--muted);font-size:1.1rem;margin-bottom:42px}
     .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.card,.result{border:1px solid var(--line);background:var(--panel);border-radius:20px;padding:28px}.card h2{font-size:1.15rem;margin:0 0 18px}.option-group{display:grid;gap:10px}label.choice{display:flex;gap:12px;align-items:center;padding:13px 15px;border:1px solid var(--line);border-radius:12px;cursor:pointer;transition:.2s;background:#101612}label.choice:hover{border-color:var(--lime)}label.choice:has(input:checked){border-color:var(--lime);background:#263517}input[type=radio]{accent-color:var(--lime);width:18px;height:18px;flex:none}.small{color:var(--muted);font-size:.88rem;margin:0 0 18px}button{border:0;border-radius:12px;background:var(--lime);color:#0b0f0d;font:800 1rem system-ui;padding:15px 21px;cursor:pointer;margin-top:22px;box-shadow:0 5px 0 #729c0f}button:hover{transform:translateY(2px);box-shadow:0 3px 0 #729c0f}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid white;outline-offset:3px}
-    .result{margin-top:20px;display:none}.result.show{display:block}.result-head{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}.result h2{font-size:clamp(1.8rem,4vw,2.7rem);letter-spacing:-.035em;margin:0}.pill{color:var(--lime);border:1px solid var(--lime);padding:5px 10px;border-radius:30px;font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.result-cols{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;margin-top:18px}.result h3{font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;color:var(--lime);margin:22px 0 10px}ol,ul{padding-left:22px;margin:0}li{margin:0 0 9px}.note{border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:.9rem}.about{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;border-top:1px solid var(--line);margin-top:60px;padding-top:28px}.about img{width:92px;height:92px}.about h2{margin:0 0 5px;font-size:1.1rem}.about p{margin:0;color:var(--muted);max-width:720px}footer{border-top:1px solid var(--line);padding:25px 0 35px;color:var(--muted);font-size:.78rem}a{color:var(--lime)}
+    .result{margin-top:20px;display:none}.result.show{display:block}.result-head{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}.result h2{font-size:clamp(1.8rem,4vw,2.7rem);letter-spacing:-.035em;margin:0}.pill{color:var(--lime);border:1px solid var(--lime);padding:5px 10px;border-radius:30px;font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.result-cols{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;margin-top:18px}.result h3{font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;color:var(--lime);margin:22px 0 10px}ol,ul{padding-left:22px;margin:0}li{margin:0 0 9px}.note{border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:.9rem}.cta{margin-top:40px;border:1px solid var(--lime);background:#1b2612;border-radius:20px;padding:28px}.cta h2{margin:0 0 8px;font-size:1.4rem}.cta p{margin:0 0 6px;color:var(--muted)}.cta .btns{display:flex;gap:12px;flex-wrap:wrap}.cta a.btn{display:inline-block;margin-top:14px;border-radius:12px;background:var(--lime);color:#0b0f0d;font-weight:800;padding:13px 19px;text-decoration:none}.cta a.ghost{background:transparent;color:var(--paper);border:1px solid var(--line)}.about{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;border-top:1px solid var(--line);margin-top:60px;padding-top:28px}.about img{width:92px;height:92px}.about h2{margin:0 0 5px;font-size:1.1rem}.about p{margin:0;color:var(--muted);max-width:720px}footer{border-top:1px solid var(--line);padding:25px 0 35px;color:var(--muted);font-size:.78rem}a{color:var(--lime)}
     @media(max-width:720px){main{padding-top:42px}.grid,.result-cols{grid-template-columns:1fr}.tag{display:none}.card,.result{padding:22px}.about{grid-template-columns:1fr}.about img{width:72px;height:72px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}label.choice,button{transition:none}}
   </style>
@@ -42,9 +50,18 @@
       </div><button type="submit">Build my Jeep day →</button></fieldset>
     </form>
     <section id="result" class="result" aria-live="polite" aria-label="Your Jeep day plan"><div class="result-head"><h2 id="plan-title"></h2><span id="plan-time" class="pill"></span></div><p id="plan-intro"></p><div class="result-cols"><div><h3>A flexible plan</h3><ol id="plan-steps"></ol></div><div><h3>Pack this</h3><ul id="plan-pack"></ul></div></div><p class="note" id="plan-note"></p></section>
-    <section class="about"><img src="assets/jeep-michelle-lime.png" alt="Jeep Michelle circular logo"><div><h2>Made by Michelle</h2><p>I'm a New Smyrna Beach local who likes the little decisions that turn an ordinary drive into a good day. This is an independent, just-for-fun planning tool—not an official Jeep or trail guide. Check current access, weather, road rules, and vehicle capability before you go.</p></div></section>
+    <section class="cta" aria-label="Contact Jeep Michelle">
+      <h2>Need the Jeep for your Jeep day?</h2>
+      <p>I'm Jeep Michelle at New Smyrna Chrysler Jeep Dodge Ram, 2555 State Rd 44, New Smyrna Beach. Looking for a Jeep for sale in New Smyrna Beach, Daytona Beach or anywhere in Florida? I'll help you find the right Wrangler or Gladiator and set up a test drive.</p>
+      <div class="btns">
+        <a class="btn" href="mailto:michellecdjr@gmail.com?subject=Jeep%20Adventure%20Picker%3A%20I%27m%20looking%20for%20a%20Jeep">Email Jeep Michelle</a>
+        <a class="btn ghost" href="tel:+13866631257,1375">Call (386) 663-1257 ext. 1375</a>
+        <a class="btn ghost" href="https://ramjeepmichelle.github.io/jeep-model-picker/">Which Jeep fits me?</a>
+      </div>
+    </section>
+    <section class="about"><img src="assets/jeep-michelle-lime.png" alt="Jeep Michelle circular logo"><div><h2>Made by Jeep Michelle</h2><p>I'm a Jeep and Ram commercial fleet specialist in New Smyrna Beach, a Volusia local history buff and a Halifax Historical Society volunteer. I like the little decisions that turn an ordinary drive into a good day. This is an independent, just-for-fun planning tool—not an official Jeep or trail guide. Check current access, weather, road rules, and vehicle capability before you go.</p></div></section>
   </main>
-  <footer><div class="wrap">Independent fan project by Michelle · No affiliation with Jeep or its manufacturer · © <span id="year"></span></div></footer>
+  <footer><div class="wrap">Independent project by Jeep Michelle · Not affiliated with or endorsed by Stellantis; Jeep is a registered trademark of FCA US LLC · © <span id="year"></span><br><a href="https://jeepmichelle.com">jeepmichelle.com</a> · <a href="https://github.com/RamJeepMichelle">More Jeep Michelle projects</a></div></footer>
   <script>
     const plans={
       coast:{title:'The coastal reset',intro:'Keep the route loose and give yourself time to stop when the light is good.',steps:['Pick a legal public parking spot near the water and take a short walk.','Pause for a drink or a view in New Smyrna Beach or Daytona Beach.','Take the scenic way home with enough daylight to enjoy it.'],pack:['Water and sun protection','A towel and a bag for damp gear','Phone charger','A way to carry out any trash'],note:'Beach driving is allowed only where posted and under current local rules. Stay off dunes and protected areas.'},
